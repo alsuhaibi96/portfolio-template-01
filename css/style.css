@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    --bg-color:#f6f6f6;
+}
+body{
+    font-size: 25px;
+    color: black;
+}
+header ,.home{
+    background-color: var(--bg-color);
+}
+.home{
+    height: auto;
+}
+nav{
+    position: relative;
+    padding: 20px;
+    
+}
+.top-figure-1{
+    position: absolute;
+    top:0px;
+    left: 200px;
+    width: 70px;
+}
+.logo{
+    top:25px;
+    left: 50px;
+  position: absolute;
+  border-style: none;
+    font-weight: 800;
+    font-size: 25px;
+    background-color: var(--bg-color);
+}
+.nav-links-container{
+margin-right: 100px;
+    display: flex;
+    justify-content:end;
+    justify-items: end;
+}
+ul{
+    list-style: none;
+
+}
+.nav-links-container ul li a{
+    margin: 10px 20px 0px 20px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+} 
+
+.home-container{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction-paragraph-container{
+    padding: 120px 0 0 50px;
+
+}
+.introduction-paragraph{
+    font-size: 30px;
+    font-weight: bold;
+}
+.introduction{
+    font-weight: bolder;
+    font-size: 60px;
+}
+.what-i-do{
+    font-size: 20px;
+}
+.hire-me-container{
+    padding-top: 80px;
+}
+.hire-me{
+    border-style: none;
+    padding: 15px 25px;
+    background-color: black;
+
+    color: white;
+    font-weight: 800;
+}
+.middle-figure-1{
+height: 40px;
+width: 40px;
+top:200px;
+right:500px;
+position: absolute;
+}
+.middle-figure-2{
+    height: 20px;
+width: 20px;
+top:50px;
+right:400px;
+position: absolute;
+}
+.skills-expeirence{
+    padding: 50px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+.skills1  a{
+    margin-left: 10px;
+}
+.skills2 a{
+    margin-left: 10px;
+}
+.skills-mobile1 a ,.skills-mobile2 a{
+    margin-left: 10px;
+
+}
