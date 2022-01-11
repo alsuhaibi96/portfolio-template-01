@@ -10,6 +10,7 @@ body{
 header ,.home{
     background-color: var(--bg-color);
 }
+
 .home{
     height: auto;
 }
@@ -46,8 +47,7 @@ ul{
 .nav-links-container ul li a{
     margin: 10px 20px 0px 20px;
     font-weight: 600;
-    color: black;
-    text-decoration: none;
+  
 } 
 
 .home-container{
@@ -111,5 +111,33 @@ position: absolute;
 }
 .skills-mobile1 a ,.skills-mobile2 a{
     margin-left: 10px;
+
+}
+.expeirence{
+
+margin: auto;
+width: 50%;
+}
+.experince-paragraph{
+    margin-top: 20px;
+}
+.services-container{
+    padding: 100px;
+    margin: auto;
+    width: 50%;
+}
+.services-navs-container{
+    margin: auto;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.services-navs {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+a{
+    color: black;
+    text-decoration: none;
 
 }
