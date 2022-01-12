@@ -2,7 +2,11 @@
     padding: 0;
     margin: 0;
     --bg-color:#f6f6f6;
-    box-sizing: content-box;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
 
 }
 body{
@@ -16,17 +20,23 @@ header ,.home{
 
 .home{
     height: auto;
+    max-width: 100%;
 }
 nav{
     position: relative;
     padding: 20px;
     
 }
+
 .top-figure-1{
     position: absolute;
     top:0px;
     left: 200px;
-    width: 70px;
+    width: 40px;
+    height: 40px;
+}
+.logo ,.introduction{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
 }
 .logo{
     top:25px;
@@ -50,7 +60,8 @@ ul{
 .nav-links-container ul li a{
     margin: 10px 20px 0px 20px;
     font-weight: 600;
-  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 19px;
 } 
 
 .home-container{
@@ -65,50 +76,66 @@ ul{
 }
 .introduction-paragraph{
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 500;
+    margin: 15px 0px 25px 0px;
 }
 .introduction{
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 50px;
 }
 .what-i-do{
-    font-size: 20px;
+    font-size: 18px;
 }
 .hire-me-container{
-    padding-top: 80px;
+    padding-top: 60px;
 }
 .hire-me,.submit-button{
     border-style: none;
-    padding: 15px 25px;
+    padding: 10px 25px;
     background-color: black;
-
+font-size: 20px;
     color: white;
-    font-weight: 800;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .my-profile-image{
     width: 35%;
     height: auto;
 }
-.middle-figure-1{
+.middle-figure-0{
 height: 40px;
 width: 40px;
 top:200px;
 right:500px;
 position: absolute;
 }
+.middle-figure-1{
+    height: 40px;
+    width: 40px;
+    top:350px;
+    right:550px;
+    position: absolute;
+    }
 .middle-figure-2{
-    height: 20px;
-width: 20px;
+    height: 24px;
+width: 25px;
 top:50px;
 right:400px;
+position: absolute;
+}
+.middle-figure-3{
+    height: 24px;
+width: 25px;
+bottom: 30px;
+left: 200px;
 position: absolute;
 }
 .skills-expeirence{
     padding: 50px;
     margin: auto;
-    width: 50%;
+    width: 70%;
     display: flex;
-    gap: 20px;
+    gap: 100px;
 }
 .skills1  a{
     margin-left: 10px;
@@ -123,15 +150,16 @@ position: absolute;
 .expeirence{
 
 margin: auto;
-width: 50%;
+width: 62%;
 }
+
 .experince-paragraph{
     margin-top: 20px;
 }
 .services-container{
     padding: 100px;
     margin: auto;
-    width: 50%;
+    width: 70%;
 }
 .services-navs-container{
     margin: auto;
@@ -141,7 +169,7 @@ width: 50%;
 .services-navs {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
 }
 .services-image{
     width: 300px;
@@ -155,7 +183,7 @@ a{
 .all-services{
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 10px;
+    gap: 20px;
 }
 .contact-us-container{
   margin: auto;
@@ -163,7 +191,7 @@ a{
     background-color: #f5f5f5;
     display: grid;
     grid-template-columns: 40% 55%;
-    gap: 20px;
+    gap: 5px;
 }
 .form-container{
     margin: auto;
@@ -232,7 +260,7 @@ padding: 50px 50px 20px 50px;
     border-radius: 50%;
     box-shadow: 0 0 0 1px rgba(189, 189, 189, 0.993);
  
-  
+  margin-bottom: 5px;
 }
 .col.item.social a {
     margin-right: 10px;
@@ -253,17 +281,19 @@ padding: 50px 50px 20px 50px;
 {
     .home-container{
 
-        justify-content: space-between;
         flex-direction: column-reverse;
-        padding: 20px;
+        width: 100%;
+
+        
     }
+  
     .introduction-paragraph-container{
-        padding: 20px 0 0 50px;
-    
+        padding: 20px 10px 0px 20px;
+    max-width: 90%;
     }
     .introduction{
         font-weight: bolder;
-        font-size: 50px;
+        font-size: 35px;
     }
    
     .introduction-paragraph{
@@ -271,63 +301,79 @@ padding: 50px 50px 20px 50px;
         font-weight: bold;
     }
     .my-profile-image{
-        width: 80%;
+        width: 100%;
         height: auto;
     }
+    .hire-me-container{
+        width: 50%;
+margin: auto;
+padding-bottom: 20px;
+    }
+    
     .skills-expeirence{
         padding: 50px;
-        margin: auto;
         width: 100%;
         flex-direction: column;
     
     }
+    .skills-img{
+        width: 100%;
+    }
     .skills1,.skills-mobile1,.skills-mobile2,.skills2{
    
         display: flex;
-        width: 80%;
+        width: 100%;
         flex-direction: column;
     }
+
     .expeirence{
-padding: 50px;
-        width: 80%;
+        width: 100%;
+        }
+        .experince-paragraph{
+            padding: 25px;
+        }
+        .services-navs a{
+            font-size: 15px;
         }
         .services-container{
-            padding: 50px;
-            width: 80%;
+            padding: 20px;
+            width: 100%;
         }
         .services-navs-container{
             margin: auto;
-            width: 80%;
+            width: 100%;
             margin-bottom: 30px;
         }
         .services-navs {
             display: flex;
             flex-direction: row;
-    gap: 40px;
         }
         .services-image{
-            width: 180px;
+            width: 150px;
             height: 100px;
         }
         .contact-us-container{
-            padding: 20px;
+            padding: 10px;
               display: grid;
               grid-template-columns: 100%;
           }
           .form-container{
             
-              width: 90%;
-              padding: 10px 20px;
+              width: 100%;
+              padding: 20px 5px;
           
           }
           input,select{
-              width: 120px;
+              width: 150px;
               height: 30px;
         
           }
+          label{
+              font-size: 15px;
+          }
           select{
-            
-          height: 40px;
+            width: 150px;
+          height: 30px;
           }
        
           .map-container{
@@ -346,6 +392,11 @@ padding: 50px;
         }
         .burger-container{
             display: block;
+        }
+        .submit-btn-container{
+    
+            margin: auto;
+            width: 50%;
         }
 } 
 
