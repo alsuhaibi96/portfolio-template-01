@@ -14,22 +14,24 @@
     <header>
         <section>
             <div  class="burger-container">
-            <a  href="#"><i  class="fa fa-bars"></i></a>
+            <a id="burger" class="hamburger" href="#"><i  class="fa fa-bars"></i></a>
         </div>
             <nav class="main-nav">
             
                 <img class="top-figure-1  hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
                 <button class="logo">Alsuhaibi</button>
                 <div class="nav-links-container">
-                    <ul>
+                    <ul class="nav-links">
                         <li>
                             <a href="#home">Home</a>
-                            <a href="#about-us">About Me</a>
-                            <a href="#our_services">My Services</a>
-                            <a href="#resume">Resume</a>
-                            <a href="#contact_us">Contact Me</a>
-
+                            
                         </li>
+                            <li><a href="#about-us">About Me</a></li>
+                            
+                            <li><a href="#our_services">My Services</a></li> 
+                         <li>   <a href="#resume">Resume</a></li>
+                           <li> <a href="#contact_us">Contact Me</a> </li>
+
                     </ul>
                 </div>
 
@@ -42,7 +44,7 @@
                 <div class="home-container">
                     <div class="introduction-paragraph-container">
                         <div style="position: relative;">
-                            <img class="middle-figure-2 hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
+                            <img  class="middle-figure-2 hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
 
                         </div>
                         <h1 class="introduction">Hi I Am Abdulrahman </h1>
@@ -65,7 +67,7 @@
           
                     </div>
                    
-                    <embed class="my-profile-image Profile-animation " src="assets/images/sss2black.svg" alt="My photo" height="auto" >
+                    <img id="myImage" class="my-profile-image Profile-animation " src="assets/images/sss2blackpng.png" alt="My photo" height="auto" >
                     <div style="position: relative;">
                         <img class="middle-figure-0  hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
                         <img class="middle-figure-1  hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
@@ -89,16 +91,16 @@
                         <div class="skills1">
 
                             <a>Laravel</a>
-                            <img class="skills-img" src="assets/images/Layer 2.png" alt="laravel figure">
-                            <a>CSS & HTML</a>
-                            <img class="skills-img" src="assets/images/Layer 2.png" alt="html css figure">
+                            <img class="skills-img" src="assets/images/Layer 70.png" alt="laravel figure">
+                            <a>  HTML & CSS</a>
+                            <img class="skills-img" src="assets/images/Layer 90.png" alt="html css figure">
                         </div>
                         <div class="skills2">
 
                             <a>JS & PHP</a>
-                            <img class="skills-img" src="assets/images/Layer 2.png" alt="JS php figure">
+                            <img class="skills-img" src="assets/images/Layer 70.png" alt="JS php figure">
                             <a>Bootstrap & tailwind</a>
-                            <img class="skills-img" src="assets/images/Layer 2.png" alt="Bootstrap tailwind figure">
+                            <img class="skills-img" src="assets/images/Layer 852.png" alt="Bootstrap tailwind figure">
                         </div>
                     </div>
 
@@ -106,21 +108,22 @@
                         <div class="skills-mobile1">
 
                             <a>Flutter</a>
-                            <img src="assets/images/Layer 2.png" alt="laravel figure">
+                            <img src="assets/images/Layer 75.png" alt="laravel figure">
                             <a>Dart</a>
-                            <img src="assets/images/Layer 2.png" alt="html css figure">
+                            <img src="assets/images/Layer 852.png" alt="html css figure">
                         </div>
                         <div class="skills-mobile2">
 
                             <a>Andriod</a>
-                            <img src="assets/images/Layer 2.png" alt="JS php figure">
+                            <img src="assets/images/Layer 70.png" alt="JS php figure">
                             <a>Java & XML</a>
-                            <img src="assets/images/Layer 2.png" alt="Bootstrap tailwind figure">
+                            <img src="assets/images/Layer 70.png" alt="Bootstrap tailwind figure">
                         </div>
                     </div>
 
 
                 </div>
+          
             </div>
 
             <div class="expeirence">
@@ -130,7 +133,14 @@
                     I have an intesive expeirence in web development and software analysis .
                     I also Worked as a leader and lead teams and other indiviuals during the development process.
                 </p>
+                <div class="resume-container"id="resume" >
+                    <a class="resume"  href="assets/C.Vs/A.Alsuhaibi-M-W-developer-en-CV-11-11.pdf" download="A.Alsuhaibi-M-W-developer-en-CV-11-11" target="_blank">
+                        Download C.V
+                    
+                    </a>
+                                            </div>
             </div>
+           
         </section>
 
 
@@ -201,19 +211,20 @@
         <div class="contact-us-container">
 
             <div class="form-container">
-                <form method="#" action="#">
+                <form name="form" onsubmit="return validateForm()" method="#" action="#" class="contact_form">
                     <h1>Get In Touch</h1>
-                    <div style="display: flex;gap: 50px;margin-top: 30px;">
-                        <div>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group">
                             <label>Name:</label>
                             <br>
-                            <input type="text" placeholder="Enter Your Full Name">
+                            <input  required name="name" type="text" placeholder="Enter Your Full Name">
 
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label>Service Type:</label>
                             <br>
-                            <select>
+                            <select required>
                                 <option value="">Web Development</option>
                                 <option value="">Mobile Development </option>
                                 <option value="">UI - UX Design</option>
@@ -221,20 +232,25 @@
                             </select>
                         </div>
                     </div>
-
-                    <br>
-                    <label>Phone Number:</label>
-                    <br>
-                    <input type="number" placeholder="Phone number">
-                    <br>
-                    <div style="margin-top: 50px;">
+<div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number:</label>
+                        <br>
+                        <input type="tel" id="phone" name="phone" placeholder="777 *** ***"
+                         pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br>
+      <small>Format: 777-***-***</small><br><br>
+                </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group" style="margin-top: 10px;">
                         <label>Message:</label>
                         <br>
-                        <textarea placeholder="Type a message here" cols="40" rows="10" sc>
+                        <textarea placeholder="Type a message here" cols="30" rows="10" sc>
 </textarea>
                     </div>
+                </div>
                     <br>
-                    <div class="submit-btn-container">
+                    <div class="submit-btn-container" style="padding:  0 15px;">
                     <button class="submit-button" type="submit">Submit</button>
                     </div>
                 </form>
@@ -276,6 +292,10 @@
         </div>
         <p class="copyrights-container">Copyrights ©️ 2022</p>
     </footer>
+    <script src="js/myapp.js">
+        
+    </script>
+                    
 </body>
 
 </html>
