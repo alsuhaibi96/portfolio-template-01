@@ -17,6 +17,7 @@ html{
     visibility: visible;
 }
 body{
+    
     font-size: 25px;
     color: black;
     overflow-x: hidden;
@@ -36,7 +37,6 @@ header ,.home{
 
 .home{
     height: auto;
-    max-width: 100%;
 }
 nav{
     padding: 20px;
@@ -111,6 +111,7 @@ font-size: 20px;
 }
 .my-profile-image{
     width: 35%;
+    
     height: auto;
 }
 .middle-figure-0{
@@ -154,7 +155,7 @@ position: absolute;
 padding: 40px;
 margin: auto;
 width: 62%;
-background-color: var(--bg-color);
+
 border-radius: 5px;
 
 }
@@ -181,8 +182,10 @@ border-radius: 5px;
     width: 300px;
     height: 200px;
 }
-a{
+footer a ,li a{
     color: black;
+}
+a{
     text-decoration: none;
 
 }
@@ -203,6 +206,7 @@ a{
 .form-container{
   
     width: 100%;
+    border:  3px solid rgb(145, 135, 135); 
 
     background-color: #e9e9e9;
 }
@@ -330,6 +334,8 @@ padding: 10px;
     .my-profile-image{
         width: 100%;
         height: auto;
+     display: none;
+        
     }
      .hire-me-container{
         width: 50%;
@@ -387,6 +393,7 @@ padding:0px;
             padding: 10px;
               display: grid;
               grid-template-columns: 100%;
+         
           }
           .form-container{
             
@@ -435,7 +442,7 @@ padding:0px;
             width: 100%;
             padding: 0px; }
             .footer-fluid{
-              
+                height: 400px;
             padding: 50px 5px 5px 5px;
             }
             .copyrights-container{
@@ -570,4 +577,78 @@ padding:0px;
         top: 0px;
     }
 
+}
+#button{
+    position: absolute;
+    right: 200px;
+}
+
+/* Switch button Style*/
+.Theme-text {
+    padding: 10px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked+.slider {
+    background-color: rgb(241, 228, 228);
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+   /* theme*/
+   .theme-mode {
+    background-color: black;
+    color: white;
 }

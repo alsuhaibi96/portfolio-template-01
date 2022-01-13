@@ -63,3 +63,71 @@ links.forEach(function (link) {
     navlinks.classList.toggle("open");
   });
 });
+
+var angle = 0,
+  img = document.getElementById('img_container');
+document.getElementById('button').onclick = function() {
+  angle = (angle + 90) % 360;
+  img.className = "rotate" + angle;
+  var imgid = document.getElementById('myprofileImage');
+if(imgid && imgid.style) {
+  imgid.style.height = '800px';
+  imgid.style.width = '800px';
+}
+}
+function changeTheme() {
+
+  var element = document.body;  
+  element.classList.toggle("theme-mode");
+  var expeirenceId=document.getElementById("expeirenceId");
+  
+  
+      // element.style.border = ...
+ 
+  // var contact_id=document.getElementById("contact_id");
+  if (document.getElementById('switch-btn').checked) {
+ 
+    var allElements = document.getElementsByClassName("bg-color");
+   
+    var aElements = document.getElementsByTagName("a");
+   
+    for (var i = 0, len = allElements.length; i < len; i++) {
+        var element = allElements[i];
+     
+        element.style.backgroundColor="black";
+      
+
+
+  }
+
+  for (i = 0; i < aElements.length; i++) {
+    aElements[i].style.color = "white";
+  } 
+ 
+  }
+  else{
+    var aElements = document.getElementsByTagName("a");
+  
+    var allElements = document.getElementsByClassName("bg-color");
+    var anchor = document.getElementsByClassName("anchor");
+
+    for (var i = 0, len = allElements.length; i < len; i++) {
+        var element = allElements[i];
+        element.style.backgroundColor="#f6f6f6";
+  }
+  for (i = 0; i < aElements.length; i++) {
+    aElements[i].style.color = "black";
+  } 
+  for (i = 0; i < anchor.length; i++) {
+    anchor[i].style.color = "white";
+  } 
+
+  }
+  
+
+}
+function load(){
+  
+  document.getElementById("switch-btn").checked=false;
+ }
+

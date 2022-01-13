@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
+<body onload="load()">
+    <header class="bg-color">
         <section>
             <div  class="burger-container">
             <a id="burger" class="hamburger" href="#"><i  class="fa fa-bars"></i></a>
@@ -19,9 +19,9 @@
             <nav class="main-nav">
             
                 <img class="top-figure-1  hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
-                <button class="logo">Alsuhaibi</button>
+                <button class="logo ">Alsuhaibi</button>
                 <div class="nav-links-container">
-                    <ul class="nav-links">
+                    <ul class="nav-links" >
                         <li>
                             <a href="#home">Home</a>
                             
@@ -31,7 +31,13 @@
                             <li><a href="#our_services">My Services</a></li> 
                          <li>   <a href="#resume">Resume</a></li>
                            <li> <a href="#contact_us">Contact Me</a> </li>
+                      <li>
+                        <label class="switch">
+                            <input id="switch-btn" onclick="changeTheme()" type="checkbox" checked>
+                            <span class="slider round"></span>
+                          </label>
 
+                      </li>
                     </ul>
                 </div>
 
@@ -39,7 +45,7 @@
         </section>
     </header>
     <main>
-        <section id="home" class="home">
+        <section id="home" class="home bg-color">
             <div>
                 <div class="home-container">
                     <div class="introduction-paragraph-container">
@@ -58,16 +64,20 @@
                             programming languages. <br>Seeking to have the skills to be 
                             one of the best developers in the world.
                         </span>
-                        <div class="hire-me-container">
-<a class="hire-me"  href="https://wa.me/+967775474720">
+                        <div class="hire-me-container" >
+<a class="hire-me anchor"  href="https://wa.me/+967775474720" >
     HIRE ME
 
 </a>
                         </div>
           
                     </div>
+               
+                  
+
+                
+                    <img id="myprofileImage" class="my-profile-image Profile-animation " src="assets/images/sss2blackpng.png" alt="My photo" height="auto" >
                    
-                    <img id="myImage" class="my-profile-image Profile-animation " src="assets/images/sss2blackpng.png" alt="My photo" height="auto" >
                     <div style="position: relative;">
                         <img class="middle-figure-0  hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
                         <img class="middle-figure-1  hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
@@ -78,6 +88,7 @@
                     <img class="middle-figure-3 hide-figure" src="assets/images/Ellipse 1.png" alt="figure">
 
                 </div>
+                <button id="button">+</button>
             </div>
         </section>
         <section id="about-us">
@@ -126,7 +137,7 @@
           
             </div>
 
-            <div class="expeirence">
+            <div class="expeirence bg-color" id="expeirenceId">
                 <h2 style="text-align: center;">My expeirence</h2>
 
                 <p class="experince-paragraph">
@@ -134,7 +145,7 @@
                     I also Worked as a leader and lead teams and other indiviuals during the development process.
                 </p>
                 <div class="resume-container"id="resume" >
-                    <a class="resume"  href="assets/C.Vs/A.Alsuhaibi-M-W-developer-en-CV-11-11.pdf" download="A.Alsuhaibi-M-W-developer-en-CV-11-11" target="_blank">
+                    <a class="resume anchor"  href="assets/C.Vs/A.Alsuhaibi-M-W-developer-en-CV-11-11.pdf" download="A.Alsuhaibi-M-W-developer-en-CV-11-11" target="_blank">
                         Download C.V
                     
                     </a>
@@ -150,7 +161,7 @@
                     <ul class="services-navs">
                         <li><a href="all-services" class="all-services-caption">All Services</a></li>
                         <li>
-                            <a href="mobile-services">Mobile </a>
+                            <a href="mobile-services" >Mobile </a>
                         </li>
                         <li>
                             <a href="web-services">Web </a>
@@ -165,9 +176,11 @@
 
                 <div id="all-services" class="all-services">
                     <div >
-                        <img class="services-image" 
+                        <div id="img_container" >
+                        <img id="myImage" class="services-image" 
                             src="assets/images/1000_F_121069890_mRLIMwvOSX4nUvu1N3RFAPNqc2cJcAqF.jpg "
                             alt="services">
+                        </div>
                         <img class="services-image"  src="assets/images/1000_F_138666990_LXwBvsgyVwjhGaGHZmBglMASNG9eE9aP.jpg" alt="services">
                     </div>
 
@@ -183,34 +196,15 @@
                     </div> -->
 
                 </div>
-                <!-- <div id="mobile-services">
-                    <img src="" alt="services">
-                    <img src="" alt="services">
-                    <img src="" alt="services">
-                    
-                    </div>
-                    <div id="web-services">
-                        <img src="" alt="services">
-                        <img src="" alt="services">
-                        <img src="" alt="services">
-                        
-                        </div>
-                
-                        <div id="previous-work">
-                            <img src="" alt="work">
-                            <img src="" alt="work">
-                            <img src="" alt="work">
-                            
-                            </div> -->
-
+              
             </div>
         </section>
 
     </main>
-    <section id="contact_us">
-        <div class="contact-us-container">
+    <section id="contact_us" style="height: auto;">
+        <div class="contact-us-container bg-color">
 
-            <div class="form-container">
+            <div class="form-container bg-color">
                 <form name="form" onsubmit="return validateForm()" method="#" action="#" class="contact_form">
                     <h1>Get In Touch</h1>
                     <br>
@@ -269,7 +263,7 @@
     </section>
     <hr>
 
-    <footer>
+    <footer class="bg-color">
         <div class="footer-fluid">
            
         <div class="footer-container">
